@@ -1,7 +1,6 @@
-### DESAFIO PYTHON
+# DESAFIO PYTHON
 
 # Sistema de Coleta de Dados de Fóruns de Discussão
-
 ## Descrição
 
 Este projeto implementa um sistema de coleta e armazenamento de dados de um fórum de discussões. O sistema utiliza **web scraping** para coletar dados de um post, incluindo informações sobre o post original, suas respostas e comentários, e armazena esses dados em um banco de dados **MongoDB**.
