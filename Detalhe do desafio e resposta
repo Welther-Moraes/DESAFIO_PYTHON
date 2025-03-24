@@ -1,0 +1,34 @@
+Desafio Final
+• Considere um sistema de coleta e armazenamento de dados de fóruns de discussões
+• O sistema terá dois módulos, um de coleta (web-scraping) que já foi desenvolvido e módulo de persistência dos dados que deve ser desenvolvido
+• Os dados coletados pelo módulo de coleta são:
+  • Data/Hora da coleta
+  • URL do post
+  • Data/Hora do post
+  • Usuário
+  • Título do post
+  • Conteúdo do post
+  • Comentários do post
+    • Autor do comentário
+    • Data/Hora do comentário
+    • Conteúdo do comentário
+  • Quantidade de reações
+
+• O objetivo é armazenar todos os dados coletados de forma persistente em um sistema de banco de dados
+• Os dados serão analisados posteriormente por um módulo de análise de sentimentos baseado em NLP (Natual Language Processing) assim como correlacionados para prever tendências
+• Analise os dados, a forma como estão estruturados e decida qual o melhor banco de dados para atender tais requisitos, justifique sua escolha
+• A partir desse ponto, efetue a modelagem dos dados e a implementação do banco de dados (scripts, criação de tabelas/coleções, etc)
+• Escreva um módulo em Python, capaz de receber, tratar e armazenar os dados enviados pelo módulo de coleta no banco de dados escolhido, assim como as funções para recuperação de tais dados (pelo menos 3 formas diferentes de consulta)
+• Documente seu código e crie um arquivo README no formato Markdown, com todos os detalhes necessários para a instalação e execução do módulo
+• Enviar um arquivo ZIP ou o link do GitHub (publico)
+
+Resposta:
+O objetivo do projeto é armazenar os dados coletados de forma persistente em um banco de dados. O MongoDB foi escolhido por ser um banco NoSQL que trabalha
+bem com dados dinâmicos, como os coletados de fóruns, onde as informações podem variar e não têm um formato fixo. Ele também permite armazenar grandes volumes
+de dados, o que é importante para o projeto.
+Depois de armazenados, os dados serão usados para análise de sentimentos, onde será possível identificar se os posts e respostas são positivos, negativos ou neutros.
+Além disso, será possível analisar as tendências e prever tópicos que estão sendo mais discutidos.
+O MongoDB armazena os dados de forma hierárquica, com os posts contendo respostas e comentários, o que facilita o trabalho com esse tipo de informação. O módulo
+Python foi criado para coletar os dados do site, tratar essas informações e armazená-las no banco de dados. Ele também permite fazer consultas como buscar posts
+por título, encontrar respostas ou comentar sobre interações.
+A escolha do MongoDB se dá pela sua flexibilidade e capacidade de lidar com dados grandes e variáveis, além de permitir consultas rápidas e eficazes para futuras análises.
